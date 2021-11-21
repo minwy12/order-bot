@@ -23,7 +23,7 @@ var map = new HashMap();
 function response(room, msg, sender, isGroupChat, replier, ImageDB) {
    if(msg.startsWith("주문봇")){
       msg = msg.substring(3).trim().replace(/( |\n)/gi, "");
-      var response = "사용법\n1. 주문봇 시작\n주문 받기를 시작합니다.\n2. 주문봇 주문 _메뉴 (_개수)>>\n주문 리스트에 해당 메뉴가 (개수만큼) 추가됩니다.\n3. 주문봇 취소 _메뉴 (_개수)\n주문 리스트에서 해당 메뉴가 (개수만큼) 삭제됩니다.\n4. 주문봇 완료\n주문 받기를 완료합니다.";
+      var response = "사용법\n1. 주문봇 시작\n주문 받기를 시작합니다.\n2. 주문봇 주문 _메뉴 (_개수)\n주문 리스트에 해당 메뉴가 (개수만큼) 추가됩니다.\n3. 주문봇 취소 _메뉴 (_개수)\n주문 리스트에서 해당 메뉴가 (개수만큼) 삭제됩니다.\n4. 주문봇 완료\n주문 받기를 완료합니다.";
 
       if(msg.startsWith("시작")) {
          response = "주문 받기를 시작합니다.\n1. 주문봇 주문 _메뉴 (_개수)\n2. 주문봇 취소 _메뉴 (_개수)";
